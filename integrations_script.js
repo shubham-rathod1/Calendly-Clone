@@ -10,6 +10,10 @@ document.getElementById('payment_btn').addEventListener('click',getData)
 document.getElementById('analyt_btn').addEventListener('click',getData)
 document.getElementById('api_btn').addEventListener('click',getData)
 document.getElementById('others_btn').addEventListener('click',getData)
+
+document.getElementById('category_select').addEventListener('click',()=>{
+    getData();
+})
 //Fetching data from json file
 async function getData()
 {
