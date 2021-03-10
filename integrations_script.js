@@ -1,3 +1,4 @@
+//Button listners
 document.getElementById('popular_btn').addEventListener('click',getData)
 document.getElementById('apps_btn').addEventListener('click',getData)
 document.getElementById('calendars_btn').addEventListener('click',getData)
@@ -9,7 +10,7 @@ document.getElementById('payment_btn').addEventListener('click',getData)
 document.getElementById('analyt_btn').addEventListener('click',getData)
 document.getElementById('api_btn').addEventListener('click',getData)
 document.getElementById('others_btn').addEventListener('click',getData)
-
+//Fetching data from json file
 async function getData()
 {
     var btn_value = event.target.value;
@@ -21,8 +22,9 @@ async function getData()
     data = await data.json();
     showData(data[btn_value],data.header[btn_value]);
 }
+//Loading 'Popular' data on page loading
 window.addEventListener('load',getData)
-
+//function for show the data as table
 function showData(data,header){
     document.getElementById('top_img').src = header[0];
     document.getElementById('top_h1').textContent = header[1];
@@ -48,6 +50,7 @@ function showData(data,header){
 }
 var id1;
 var len;
+//Show link when hovering
 window.onmouseover = e =>{
     var id = e.target.id;
     var idno = (e.target.id).substring(8)
@@ -61,6 +64,7 @@ window.onmouseover = e =>{
         }
     }
 }
+//Clear the link when mouse out
 window.onmouseout = e =>{
     var id = e.target.id;
     if(id.substring(0,8) != 'data_div'){
