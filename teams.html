@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <title>Calendly for Teams</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Simple, beautiful team scheduling.</h1>
+            <div>
+                <input type="email" placeholder="Enter your email" id="signup_mail"/>
+                <button id="signup">Sign Up</button>
+                <p>Get started for free. No credit card required.</p>
+            </div>
+        </div>
+        <div></div>
+        <form>
+            <p>Have a question about how Calendly might fit your team's needs?</p>
+            <p>Tell us more, and we’ll see how we can help.</p>
+            <label for="first_name">Name *</label>
+            <input type="text" id="first_name"/>
+            <p>First</p>
+            <input type="text" id="last_name"/>
+            <p>Last</p>
+            <label for="email">Business Email Address *</label>
+            <input type="email" id="email"/>
+            <label for="Company">Company *</label>
+            <input type="text" id="Company"/>
+            <label for="phone">Phone Number *</label>
+            <input type="text" id="phone"/>
+            <p>How many of your team members are going to use Calendly? *</p>
+            <input type="radio" id="members_1" name="members" value="1">
+            <label for="members_1">1</label><br>
+            <input type="radio" id="members_2" name="members" value="2">
+            <label for="members_2">2 - 9</label><br>
+            <input type="radio" id="members_3" name="members" value="10">
+            <label for="members_3">10 - 50</label><br>
+            <input type="radio" id="members_4" name="members" value="51">
+            <label for="members_4">51 - 100</label><br>
+            <input type="radio" id="members_5" name="members" value="101"><label for="members_5">101+</label>
+        </form>
+    </main>
+</body>
+</html>
