@@ -141,6 +141,7 @@ main{
 .a_seed{
     display: none;
 }
+/* Media Queries */
 @media only screen and (max-width: 1200px) {
     main{
         width: 85vw;
