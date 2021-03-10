@@ -39,14 +39,27 @@ button{
 *:focus {
     outline:0 !important;
 }
-.datadiv{
-    width: 30%;
+#grid_container{
+    margin-top: 50px;
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 3%;
+}
+.datadiv{
+    text-align: center;
 }
 .datadiv>img{
     width: 200px;
 }
-
+.datadiv>h1{
+    color:#444752;
+    font-size: 15px;
+}
+.datadiv>p{
+    color:#656A72;
+    font-size: 14px;
+}
 main{
     width: 70%;
     margin: auto;
