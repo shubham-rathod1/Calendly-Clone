@@ -14,6 +14,16 @@ document.getElementById('others_btn').addEventListener('click',getData)
 async function getData()
 {
     var btn_value = event.target.value;
+    var buttons = document.getElementsByClassName('image_btn');
+    for(var i=0; i< buttons.length; i++){
+        buttons[i].style.border = '1px solid transparent';
+    }
+    if(event.target.id == null){
+        document.getElementById('popular_btn').style.border = '1px solid #00A2FF';
+    }
+    else{
+        document.getElementById(event.target.id).style.border = '1px solid #00A2FF';
+    }
     if(btn_value==null){
         btn_value = "Popular";
     }
@@ -58,7 +68,6 @@ window.onmouseover = e =>{
         document.getElementById(`data_a${idno}`).style.display = 'block';
         for(let i=0;i<len;i++){
             if(Number(idno)!=i){
-                console.log(Number(idno),i)
                 document.getElementById(`data_a${i}`).style.display = 'none';
             }
         }
