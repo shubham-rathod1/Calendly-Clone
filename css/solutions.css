@@ -77,3 +77,17 @@ a {
 .fa_custom {
   color: #0099cc;
 }
+
+@media only screen and (max-width: 600px) {
+  .mid-cls {
+    padding-top: 5vh;
+    border: 1px solid grey;
+    height: 40vh;
+    width: 35vh;
+    border-radius: 10px;
+    margin: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+}
