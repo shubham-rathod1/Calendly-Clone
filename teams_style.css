@@ -39,3 +39,15 @@ button{
 *:focus {
     outline:0 !important;
 }
+.datadiv{
+    width: 30%;
+    display: grid;
+}
+.datadiv>img{
+    width: 200px;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
