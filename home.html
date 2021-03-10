@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div id="hero_section">
+        <div class="row_1 flex">
+            <div class="col_1 ">
+
+                <h2 id="main_heading">Calendly helps you schedule meetings without the back-and-forth emails</h2>
+
+                <div class="flex">
+                    <input id="email_sign" type="email" name="email" id="email" placeholder="Enter your email">
+                    <input id="submit" type="submit" value="Sign Up">
+                </div>
+                <p>Get started for free. No credit card required.</p>
+
+            </div>
+
+            <div class="col_2">
+                <img src="https://assets.calendly.com/assets/landing/homepage/hero-c7322cf6fde0bb0e852c466af957fd7330c8e8607dfe0854947a3cc00a5dfa77.png"
+                    alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <div class="watch_video flex">
+            <div class="text">
+                <h3>Watch our video</h3>
+                <p>We take the work out of connecting with others so you can accomplish more. Learn how painless
+                    scheduling can be with Calendly.</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/watch?v=4vAf1esMT8s" frameborder="4px">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="verti_grid">
+            <h1>How it works</h1>
+            <div class="how_it_works flex">
+                <div>
+                    <img src="https://assets.calendly.com/assets/landing/homepage/availability-c2da8e58b71054d8eae714114ecee32c5653257f929210ef11a4c0f614164c2b.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Create simple rules</h4>
+                    <p>Setup is easy. Let Calendly know your availability preferences and it’ll do the work for you.</p>
+                </div>
+            </div>
+            <div class="how_it_works flex" id="how_r2">
+                <div>
+                    <img src="https://assets.calendly.com/assets/landing/homepage/linking-b6a9a582d012421366302256c668eaf3cd88d7d8a1b1e8fa19e96bcb8ff2ea85.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Share your link</h4>
+                    <p>Share your Calendly links via email or embed it on your website.</p>
+                </div>
+            </div>
+            <div class="how_it_works flex">
+                <div>
+                    <img src="https://assets.calendly.com/assets/landing/homepage/booking-f274b2610c18540634cc9ab7210256b0fc582ffd01a444b328afaa93b4c88526.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Schedule</h4>
+                    <p>They pick a time and the event is added to your calendar</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="features_section">
+        <div class="features_top">
+            <h1>Features that everyone will enjoy</h1>
+            <img src="https://assets.calendly.com/assets/landing/en/homepage/features-3648204d046c9441528ae85ac7d5a01b9240d013cfabd0af34026671cb8322da.png"
+                alt="">
+        </div>
+        <div id="features_content">
+
+        </div>
+        <div class="feature_link">
+           <a href=""><p>Learn more about features</p></a>
+        </div>
+    </div>
+
+    <div id="traffic">
+        <div class="heading">
+            <h1>You're in good company</h1>
+            <p>We're already connecting millions of people</p>
+        </div>
+        <div class="calendar">
+            <h1>8,000,000</h1>
+            <p>Monthly Users</p>
+        </div>
+        <div class="logo_list">
+            <p>Trusted by</p>
+            <div class="flex logos_img">
+                <img src="https://assets.calendly.com/assets/landing/homepage/linkedin_logo-9b3c8e76c1b73b3bf7a2bd0937001b1b9adbae6331e76eda22f9540fedc292da.png" alt="">
+                <img src="https://assets.calendly.com/assets/landing/homepage/zendesk_logo-0a9253120470513776ad3c46242ee2477dbaff48a2dd52f424fc32cba126a6aa.png" alt="">
+                <img src="https://assets.calendly.com/assets/landing/homepage/emyth_logo-8fb30f37aead01bf232251d724f589525b10bb2fb2a5cc58c4bcfd48025c8cf5.png" alt="">
+                <img src="https://assets.calendly.com/assets/landing/homepage/uga_logo-8482035a9d6b16484afc2d8925cdbf26d46688e3f4c74b2d7f6669c6bba004a9.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        async function features() {
+
+            var data = fetch('./home.json');
+            var response = await data;
+            var newres = await response.json();
+
+            console.log(newres);
+
+            var html = '';
+
+            for (key in newres) {
+                html += `<div class ='blocks' id = "${key}">
+                    <div class="flex icn_heading">
+                    <img src= "${newres[key][0]}">
+                    <h1>${newres[key][1]}</h1>
+                    </div>
+                    <p>${newres[key][2]}</p>
+                    </div>`
+            }
+
+            document.getElementById('features_content').innerHTML = html;
+
+        }
+        features();
+
+
+
+
+    </script>
+
+</body>
+
+</html>
