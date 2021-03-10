@@ -14,6 +14,14 @@
       "Others":["https://assets.calendly.com/assets/landing/integrations/page_header_icons/other-2f15432e8fc1a1527e480088dd8185b233bb56e6e1351829e95d5e32138d2b39.png","Other Integrations","Connect Calendly with the productivity tools you use everyday and make the most of every meeting."]
     }
   ,
+  "teams":{
+    "one":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-01-9b776e281bc6ff0409d6dab3a98ec24c16a7fbd949ae776c1576e806b99bd359.png","Individual Scheduling","Full Premium features and personal scheduling pages for each team member."],
+    "two":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-02-a49dd55a405b35390626bfda6c426e7183f07fcd51c909308107ed8ad6da7ff1.png","Auto-assigned meetings","Invitee schedules a time, meeting is automatically assigned to an available team member."],
+    "three":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-03-da9c9248e5a7d6c30502567576571598a9eb1660fb56205d82964ba26e1f1d25.png","Team member selection","Invitee chooses which team member they need to meet with from a team-wide page."],
+    "four":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-04-5425e73452d0c8ebeb83121a367637d2666640860a0bbd0b7783a0ebb19a90e5.png","Team-wide Pages","Display your entire company / department's availability on one convenient page."],
+    "five":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-05-d8b5ef794ecbddb30844b0e959652054f631f08551ddaca9d17047365bde3872.png","Centralized Billing","One easy payment covers all team members' subscriptions."],
+    "six":["https://assets.calendly.com/assets/landing/team_scheduling/teams-icon-06-5369c67f7f9f3c3611f64c6b073c476f180bf7b09c49461ad68b5645ecbf539c.png","Metrics & Reporting","Understand what drives invitees to engage and track scheduling activity to campaigns."]
+  },
   "Popular": [
     {
       "image": "https://assets.calendly.com/assets/landing/integrations/card_icons/zoom-52942e8375de76156daad72591699b19e8bc59922312ceae2cbcdd8ddd8c7ae1.png",
