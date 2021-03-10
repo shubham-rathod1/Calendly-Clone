@@ -153,6 +153,17 @@ main{
 .a_seed{
     display: none;
 }
+#category_select{
+    color: #656A72;
+    font-size: 14px;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-bottom: 50px;
+}
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
     main{
@@ -170,5 +181,16 @@ main{
     main{
         width: 95vw;
         margin: auto;
+    }
+} 
+@media only screen and (max-width: 650px) {
+        #buttons_bar{
+        display: none;
+    }
+    #show_data{
+        width: 100%;
+    }
+    #category_select{
+        display: block;
     }
 } 
