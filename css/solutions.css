@@ -58,27 +58,8 @@ button {
   background-color: skyblue;
 }
 /* center div ends */
-#logo-img {
-  padding-left: 30vh;
-  padding-right: 100vh;
-}
-
 a {
   text-decoration: none;
-}
-
-#lang {
-  width: 12%;
-  height: 6vh;
-  padding-left: 15px;
-  border-radius: 10px;
-}
-.lower {
-  display: flex;
-  flex-direction: row;
-}
-.fa_custom {
-  color: #0099cc;
 }
 
 @media only screen and (max-width: 600px) {
