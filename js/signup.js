@@ -18,4 +18,6 @@ window.onclick = function (event) {
 function submit() {
   var inputEmail = document.getElementById("email");
   localStorage.setItem("email", inputEmail.value);
+  alert("You successfully signed up with Calendly");
+  window.location.href = "./login.html";
 }
