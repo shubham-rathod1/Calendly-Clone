@@ -19,11 +19,16 @@
     <div id="footer_top">
         <div class="flex footer_row">
             <div>
-                <img src="https://assets.calendly.com/assets/landing/logo_icon-5855fd7f1e3a31267dbb103936ea0db589e06132b13bf2086048a1020d764e3f.png" alt="">
+                <img src="https://assets.calendly.com/assets/landing/logo_icon-5855fd7f1e3a31267dbb103936ea0db589e06132b13bf2086048a1020d764e3f.png"
+                    alt="">
             </div>
             <div>
-                <select id="languages">
+                <select id="dropdown" data-placeholder="Language;">
                     <option value="English">English</option>
+                    <option value="English">Francais</option>
+                    <option value="English">Espanol</option>
+                    <option value="English">Deutsch</option>
+                    <option value="English">Portugues</option>
                 </select>
             </div>
         </div>
@@ -130,10 +135,13 @@
                 <h3>Join Us On</h3>
                 <ul id="share_icon">
                     <li>
-                        <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7762ed7d8e63_twitter.svg" alt="twitter">
+                        <img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7762ed7d8e63_twitter.svg"
+                            alt="twitter">
                     </li>
-                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7768627d8e5d_linkedin.svg" alt="linkedin"></li>
-                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e802c87d802d6155e87a90f_angel%20list.svg" alt="angel.co"></li>
+                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e6c01bb8abd7768627d8e5d_linkedin.svg"
+                            alt="linkedin"></li>
+                    <li><img src="https://assets.website-files.com/5e6c01bb5212506d6c119069/5e802c87d802d6155e87a90f_angel%20list.svg"
+                            alt="angel.co"></li>
                 </ul>
 
             </div>
@@ -143,7 +151,7 @@
         <div id="credit_bar">
             <div>
                 <p><span>© 2021 Calendly</span>
-                We take the work out of connecting with others so you can accomplish more.</p>
+                    We take the work out of connecting with others so you can accomplish more.</p>
                 <div>
                     <li><a href="">Privacy</a></li>
                     <li><a href="">Terms</a></li>
@@ -154,6 +162,25 @@
     </div>
 
     <script>
+
+        $("#dropdown").chosen().next(".chzn-container").hover(
+            function () {
+                $("#dropdown").trigger("liszt:open");
+            },
+            function () {
+                $(this).trigger("click");
+            }
+        );
+
+            // $(function () {
+            //     $('#dropdown').hover(function () {
+            //         $(this).attr('size', $('option').length);
+            //     },
+            //         function () {
+            //             $(this).attr('size', 1);
+            //         });
+            // });
+
     </script>
 </body>
 
