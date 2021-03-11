@@ -20,6 +20,27 @@
   font-size: 22px;
 }
 /* header css ends */
+
+/* middle class css */
+.middle-cls {
+  padding-top: 10px;
+  width: 60vw;
+  margin-left: 20vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#img3 {
+  width: 50vh;
+  margin-left: 10vh;
+}
+#content-para {
+  height: 30vh;
+  width: 25vw;
+  padding-left: 5vw;
+  padding-top: 12vh;
+}
+/* middle class css ends */
 /* resource  field*/
 #h2tag {
   text-align: center;
