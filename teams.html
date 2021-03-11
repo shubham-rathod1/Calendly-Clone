@@ -25,19 +25,19 @@
             <p>Tell us more, and we’ll see how we can help.</p>
             <table>
                 <tr>
-                    <td><label for="first_name">Name *</label><br><input type="text" id="first_name"/></td>
-                    <td><label for="email">Business Email Address *</label><br><input type="email" id="email"/></td>
+                    <td><label for="first_name" class="small_label">Name *</label><br><input type="text" id="first_name"/></td>
+                    <td><label for="email" class="small_label">Business Email Address *</label><br><input type="email" id="email"/></td>
                 </tr>
                 <tr>
-                    <td><label>First</label><br><input type="text" id="last_name"/><br><label>Last</label></td>
+                    <td><label class="small_label">First</label><br><input type="text" id="last_name"/><br><label class="small_label">Last</label></td>
                 </tr>
                 <tr>
-                    <td><label for="Company">Company *</label><br><input type="text" id="Company"/></td>
-                    <td><label for="phone">Phone Number *</label><br><input type="text" id="phone"/></td>
+                    <td><label for="Company" class="small_label">Company *</label><br><input type="text" id="Company"/></td>
+                    <td><label for="phone" class="small_label">Phone Number *</label><br><input type="text" id="phone"/></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label>How many of your team members are going to use Calendly? *</label><br>
+                        <label class="small_label">How many of your team members are going to use Calendly? *</label><br>
                         <input type="radio" id="members_1" name="members" value="1"/><label for="members_1">1</label><br>
                         <input type="radio" id="members_2" name="members" value="2"/><label for="members_2">2 - 9</label><br>
                         <input type="radio" id="members_3" name="members" value="10"/><label for="members_3">10 - 50</label><br>
@@ -47,7 +47,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label>Which best describes your department and role? *</label><br>
+                        <label class="small_label">Which best describes your department and role? *</label><br>
                         <input type="radio" id="role_1" name="role" value="1"/><label for="role_1">Sales + marketing</label><br>
                         <input type="radio" id="role_2" name="role" value="2"/><label for="role_2">Account management or customer success</label><br>
                         <input type="radio" id="role_3" name="role" value="3"/><label for="role_3">Recruiting</label><br>
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label>What are you interested in? *</label><br>
+                        <label class="small_label">What are you interested in? *</label><br>
                         <input type="radio" id="interest_1" name="interest" value="1"/><label for="interest_1">Getting my Calendly account set up</label><br>
                         <input type="radio" id="interest_2" name="interest" value="2"/><label for="interest_2">Scheduling a demo</label><br>
                         <input type="radio" id="interest_3" name="interest" value="3"/><label for="interest_3">Discovering how Calendly works with my team’s specific use-case</label><br>
@@ -68,8 +68,8 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="detail">Please describe your questions, challenges and use-case in detail. *</label><br>
-                        <textarea id="detail" cols="40" rows="5"></textarea>
+                        <label for="detail" class="small_label">Please describe your questions, challenges and use-case in detail. *</label><br>
+                        <textarea id="detail" rows="5"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -77,6 +77,7 @@
                         <button id="submit">Submit</button>
                     </td>
                 </tr>
+                <tr style="clear: both;"></tr>
             </table>
         </form>
     </main>
