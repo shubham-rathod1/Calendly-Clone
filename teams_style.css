@@ -71,3 +71,7 @@ form h1,p{
 form input[type=text],input[type=email]{
     height: 35px;
 }
+form table{
+    width: 70%;
+    margin: auto;
+}
