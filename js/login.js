@@ -16,6 +16,13 @@ window.onclick = function (event) {
 };
 
 function submit() {
-  var inputEmail = document.getElementById("email");
-  localStorage.getItem("email", inputEmail.value);
+  var inputEmail = document.getElementById("email").value;
+  var storeEmail = localStorage.getItem("email");
+  // console.log(storeEmail);
+  if (storeEmail == inputEmail) {
+    alert("You are Successfully logged in to Calendly");
+  } else {
+    alert("Please enter correct credential");
+  }
+  window.location.href = "./index.html";
 }
