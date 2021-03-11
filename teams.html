@@ -25,58 +25,59 @@
             <p>Tell us more, and we’ll see how we can help.</p>
             <table>
                 <tr>
-                    <td>
-                        <label for="first_name">Name *</label><br>
-                        <input type="text" id="first_name"/>
-                        
-                    </td>
-                    <td>
-                        <label for="email">Business Email Address *</label><br>
-                        <input type="email" id="email"/>
+                    <td><label for="first_name">Name *</label><br><input type="text" id="first_name"/></td>
+                    <td><label for="email">Business Email Address *</label><br><input type="email" id="email"/></td>
+                </tr>
+                <tr>
+                    <td><label>First</label><br><input type="text" id="last_name"/><br><label>Last</label></td>
+                </tr>
+                <tr>
+                    <td><label for="Company">Company *</label><br><input type="text" id="Company"/></td>
+                    <td><label for="phone">Phone Number *</label><br><input type="text" id="phone"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>How many of your team members are going to use Calendly? *</label><br>
+                        <input type="radio" id="members_1" name="members" value="1"/><label for="members_1">1</label><br>
+                        <input type="radio" id="members_2" name="members" value="2"/><label for="members_2">2 - 9</label><br>
+                        <input type="radio" id="members_3" name="members" value="10"/><label for="members_3">10 - 50</label><br>
+                        <input type="radio" id="members_4" name="members" value="51"/><label for="members_4">51 - 100</label><br>
+                        <input type="radio" id="members_5" name="members" value="101"/><label for="members_5">101+</label>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label>First</label><br>
-                        <input type="text" id="last_name"/><br>
-                        <label>Last</label>
+                    <td colspan="2">
+                        <label>Which best describes your department and role? *</label><br>
+                        <input type="radio" id="role_1" name="role" value="1"/><label for="role_1">Sales + marketing</label><br>
+                        <input type="radio" id="role_2" name="role" value="2"/><label for="role_2">Account management or customer success</label><br>
+                        <input type="radio" id="role_3" name="role" value="3"/><label for="role_3">Recruiting</label><br>
+                        <input type="radio" id="role_4" name="role" value="4"/><label for="role_4">Education</label><br>
+                        <input type="radio" id="role_5" name="role" value="5"/><label for="role_5">Consultant, freelancer or entrepreneur</label><br>
+                        <input type="radio" id="role_6" name="role" value="6"/><label for="role_6">Other</label>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="Company">Company *</label><br>
-                        <input type="text" id="Company"/>
+                    <td colspan="2">
+                        <label>What are you interested in? *</label><br>
+                        <input type="radio" id="interest_1" name="interest" value="1"/><label for="interest_1">Getting my Calendly account set up</label><br>
+                        <input type="radio" id="interest_2" name="interest" value="2"/><label for="interest_2">Scheduling a demo</label><br>
+                        <input type="radio" id="interest_3" name="interest" value="3"/><label for="interest_3">Discovering how Calendly works with my team’s specific use-case</label><br>
+                        <input type="radio" id="interest_4" name="interest" value="4"/><label for="interest_4">Pricing details</label><br>
+                        <input type="radio" id="interest_5" name="interest" value="5"/><label for="interest_5">Other</label>
                     </td>
-                    <td>
-                        <label for="phone">Phone Number *</label><br>
-                        <input type="text" id="phone"/>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="detail">Please describe your questions, challenges and use-case in detail. *</label><br>
+                        <textarea id="detail" cols="40" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="submit">Submit</button>
                     </td>
                 </tr>
             </table>
-            <div>
-                
-                
-            </div>
-            <div>
-                
-            </div>
-            <div>
-                <br>
-                
-            </div>
-            <div>
-                <p>How many of your team members are going to use Calendly? *</p>
-                <input type="radio" id="members_1" name="members" value="1">
-                <label for="members_1">1</label><br>
-                <input type="radio" id="members_2" name="members" value="2">
-                <label for="members_2">2 - 9</label><br>
-                <input type="radio" id="members_3" name="members" value="10">
-                <label for="members_3">10 - 50</label><br>
-                <input type="radio" id="members_4" name="members" value="51">
-                <label for="members_4">51 - 100</label><br>
-                <input type="radio" id="members_5" name="members" value="101"><label for="members_5">101+</label>
-            </div>
-            
         </form>
     </main>
     <script type="text/javascript" src="./teams_script.js"></script>
