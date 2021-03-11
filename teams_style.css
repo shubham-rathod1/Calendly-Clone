@@ -17,7 +17,7 @@ body{
     color: #656A72;
     font-size: 14px;
 }
-input{
+#signup_mail{
     width: 280px;
     height: 42px;
     border:1px solid #00A3FA;
@@ -67,4 +67,7 @@ main{
 form h1,p{
     font-size: 16px;
     text-align: center;
+}
+form input[type=text],input[type=email]{
+    height: 35px;
 }
