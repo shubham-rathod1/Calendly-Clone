@@ -5,13 +5,13 @@ body{
     width: 100%;
 }
 #top_container{
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
 #top_container>h1{
     color: #444752;
-    font-size: 30px;
+    font-size: 26px;
 }
 #top_container p{
     color: #656A72;
@@ -77,7 +77,7 @@ form table{
     width: 70%;
     margin: auto;
 }
-label{
+form label{
     color: #666A73;
     font-size: 13px;
 }
