@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="search" placeholder="search">
+    <button id="serch_btn">search</button>
+
+    <div id="showdata">
+
+    </div>
+
+    <script>
+        var serinp = document.getElementById('search');
+        var searchBtn = document.getElementById('serch_btn');
+        var alldata = localStorage.getItem('DATA');
+        alldata = JSON.parse(alldata);
+
+        var html = '';
+        for (i = alldata.length - 1; i >= 0; i--) {
+            html += `<div style = "border: 1px solid red;">`
+            for (j = 0; j < alldata[i].length; j++) {
+                html += `<p>${alldata[i][j]}</p>`
+                // console.log(alldata[i][j]);
+            }
+            html += `</div>`
+        }
+
+        document.getElementById('showdata').innerHTML = html;
+
+        function search() {
+            document.getElementById('showdata').textContent = '';
+           // console.log(serinp.value);
+            var html = '';
+            var count = 0;
+            html += `<div style = "border: 1px solid red;">`
+            for (i = alldata.length - 1; i >= 0; i--) {
+                console.log(alldata[i]);
+               
+                for (j = 0; j < alldata[i].length; j++) {
+                   // console.log(alldata[i][0]);
+                    if (alldata[i][0] == serinp.value) {
+                        //console.log('hello')
+                        html += `<p>${alldata[i][j]}</p>`
+                        count++;
+                        
+                    }
+                    
+                }
+               
+            }
+            console.log(count);
+            html += `</div>`
+            if (count == 5) {
+                document.getElementById('showdata').innerHTML = html;
+            }
+            
+        }
+
+        searchBtn.addEventListener('click', search);
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
