@@ -42,14 +42,14 @@
     <hr clear="both" />
     <div class="dis_para">
       <div class="acc_btn">
-        <button id="btn1" onclick="profile()">Profile</button>
+        <button id="btn1" onclick="profile1()">Profile</button>
         <button id="btn2" onclick="Brandling()">Branding</button>
         <button id="btn3" onclick="link()">My Link</button>
         <button id="btn4" onclick="Login()">Login</button>
       </div>
       <!--  -->
       <!--  -->
-      <div class="dis_form" id="Profile" onclick="profile()" hidden>
+      <div class="dis_form" id="Profile" onclick="profile()" >
         <form id="form1">
           <div class="pics">
             <img src="img/profile.png" id="img1" />
@@ -146,11 +146,7 @@
                 Save Changes
               </button>
               <button id="foot-btn" onclick="cancel()">Cancel</button>
-              <button
-                id="foot-btn"
-                style="margin-left: 25vw"
-                onclick="deleteAcc()"
-              >
+              <button id="foot-btn" style="margin-left: 25vw" onclick="deleteAcc()">
                 Delete Account
               </button>
             </div>
@@ -162,7 +158,7 @@
 
       <!-- Branding -->
 
-      <div class="dis_form" id="Branding" onclick="branding()">
+      <div class="dis_form" id="Branding" onclick="branding()" hidden>
         <label>logo<img src="img/question.png" id="mark1" /></label>
         <div style="border: 1px solid grey; height: 25vh; width: 30vw"></div>
         <button
