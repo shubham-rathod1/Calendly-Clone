@@ -21,8 +21,9 @@ function submit() {
   // console.log(storeEmail);
   if (storeEmail == inputEmail) {
     alert("You are Successfully logged in to Calendly");
+    window.location.href = "./user.html";
   } else {
     alert("Please enter correct credential");
   }
-  window.location.href = "./user.html";
+  
 }
