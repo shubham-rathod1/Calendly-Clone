@@ -25,3 +25,10 @@ function deleteAcc() {
   localStorage.clear();
   alert("You successfull deleted your account");
 }
+
+function profile() {
+  var profile = document.getElementById("Profile");
+  profile.hidden = false;
+}
+
+function branding() {}
