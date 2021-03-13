@@ -49,7 +49,7 @@
       </div>
       <!--  -->
       <!--  -->
-      <div class="dis_form">
+      <div class="dis_form" id="Profile" onclick="profile()" hidden>
         <form id="form1">
           <div class="pics">
             <img src="img/profile.png" id="img1" />
@@ -159,6 +159,45 @@
       </div>
       <!--  -->
       <!--  -->
+
+      <!-- Branding -->
+
+      <div class="dis_form" id="Branding" onclick="branding()">
+        <label>logo<img src="img/question.png" id="mark1" /></label>
+        <div style="border: 1px solid grey; height: 25vh; width: 30vw"></div>
+        <button
+          id="foot-btn"
+          style="
+            color: skyblue;
+            cursor: pointer;
+            margin-top: 10px;
+            border: 1px solid skyblue;
+          "
+          onclick="saved()"
+        >
+          Upload Image
+        </button>
+
+        <label style="margin-left: 4vw">JPG, GIF or PNG. Max size of 5MB.</label
+        ><br /><br /><br />
+        <label style="cursor: pointer"
+          >Calendly Branding<img src="img/question.png" id="mark1"
+        /></label>
+        <br /><br /><br />
+        <button
+          id="foot-btn"
+          style="
+            color: white;
+            border: 1px solid skyblue;
+            background-color: skyblue;
+          "
+          onclick="saved()"
+        >
+          Save Changes
+        </button>
+        <button id="foot-btn" onclick="cancel()">Cancel</button>
+      </div>
+      <!-- branding ends -->
     </div>
   </body>
 </html>
