@@ -54,5 +54,5 @@ function search() {
 
 searchBtn.addEventListener('click', search);
 document.getElementById('create').addEventListener('click',()=>{
-    window.location.href = './form.html'
+    window.location.href = './eventpage.html'
 })

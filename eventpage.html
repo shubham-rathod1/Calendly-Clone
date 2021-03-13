@@ -8,10 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/eventpage.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/sign_header1.css" />
 </head>
 
 <body>
-
+ <!-- header start -->
+ <div class="header-div">
+    <img
+      src="https://assets.calendly.com/packs/media/images/logo-square-legacy-8da30b0ff31397b3e2df781ff0bde4d3.png"
+      id="header-img"
+    />
+    <div class="header-btn">
+      <button id="head-btn1"><a href="./user.html">Home</a></button>
+      <button id="head-btn1"><a href="#">Availability</a></button>
+      <button id="head-btn1"><a href="#">Integration</a></button>
+      <button id="head-btn1"><a href="#">Help</a></button>
+      <div class="dropdown">
+        <button id="head-btn1" class="dropbtn">Account</button>
+        <div class="dropdown-content">
+          <a href="acc_setting.html">Account Setting</a>
+          <a href="#"> Billing</a>
+          <a href="#">Calendar Connection</a>
+          <a href="#">Users</a>
+          <a href="#">Privacy And Security Setting</a>
+          <a href="#">Share your link</a>
+          <a href="#">Apps</a>
+          <hr class="clear" />
+          <a href="login.html" onclick="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header ends -->
     <div id="eve-cont">
         <div id="eve-top1">
             <button id="eve-back"><i class="fa fa-angle-left" style="font-size:24px ; color: blue;"> Back</i></button>
@@ -26,7 +54,7 @@
                     <p>One-on-One</p>
                     Let an invitee pick a time to meet with you.
                 </span>
-                <button>Create</button>
+                <button onclick="redirect()">Create</button>
             </div>
 
 
@@ -70,6 +98,8 @@
 
         </div>
     </div>
+    <script type="text/javascript" src="./js/form.js"></script>
+
 </body>
 
 </html>
