@@ -24,5 +24,5 @@ function submit() {
   } else {
     alert("Please enter correct credential");
   }
-  window.location.href = "./home.html";
+  window.location.href = "./user.html";
 }
