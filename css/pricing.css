@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 body>#container {
@@ -20,17 +21,17 @@ body>#container {
     width: 280px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 1px solid rgb(68, 68, 224);
+    border: 1px solid #00A2FF;
     margin-top: 30px;
 }
 
 #pricing-form>form>button {
     height: 54px;
     width: 120px;
-    background: rgb(68, 68, 224);
+    background: #00A2FF;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid rgb(68, 68, 224);
+    border: 1px solid #00A2FF;
     margin-top: 30px;
 }
 
@@ -78,7 +79,7 @@ span {
 }
 
 .checkbox:checked+.toggle {
-    background-color: rgb(49, 36, 221);
+    background-color: #00A2FF;
 }
 
 #grid-cont {
@@ -109,7 +110,7 @@ span {
 }
 
 button {
-    background-color: rgb(58, 58, 248);
+    background-color: #00A2FF;
     color: white;
     font-size: 16px;
     border-radius: 10px;
@@ -700,7 +701,7 @@ button {
     width: 150px;
     height: 40px;
     background-color: white;
-    color: rgb(4, 4, 59);
+    color: #00A2FF;
     font-size: 18px;
     font-weight: 600;
 }
@@ -723,7 +724,7 @@ div>.pri-bt {
     top: 10%;
     left: 80%;
     width: 30px;
-    border: 2px solid red;
+    border: 2px solid #00A2FF;
 }
 
 #price-quote {
