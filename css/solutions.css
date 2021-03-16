@@ -1,8 +1,9 @@
 * {
-  font-family: cursive;
+  /* font-family: cursive; */
   padding: 0%;
   color: rgb(54, 54, 54);
   margin: 0%;
+  font-family: 'Montserrat', sans-serif;
 }
 .head-div {
   text-align: center;
@@ -21,11 +22,13 @@
   width: 70vw;
   flex-direction: row;
   flex-wrap: wrap;
+  
+  font-size: 15.5px;
 }
 .mid-cls {
   padding-top: 5vh;
   border: 1px solid grey;
-  height: 40vh;
+  height: 50vh;
   width: 35vh;
   border-radius: 10px;
   margin: 10px;

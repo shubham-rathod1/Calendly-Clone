@@ -4,6 +4,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .flex {
@@ -374,7 +375,7 @@
 }
 #traffic .calendar h1 {
   /* font-size: 136px; */
-  font-size: 10vw;
+  font-size: 9vw;
   font-weight: 600;
   line-height: 230px;
   color: #656a72;

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/sign_header1.css" />
     <link rel="stylesheet" href="./css/acc_setting.css" />
     <script src="js/acc_setting.js"></script>
+    <link rel = "icon" href =  "https://assets.calendly.com/assets/favicon-6c298004c5e8a7eb846b3a356bc6d036c1a880e5d22163f4f52a7e3d6bb12109.ico" 
+    type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- header start -->
@@ -17,7 +21,7 @@
         id="header-img"
       />
       <div class="header-btn">
-        <button id="head-btn1"><a href="#">Home</a></button>
+        <button id="head-btn1"><a href="user.html">Home</a></button>
         <button id="head-btn1"><a href="#">Availability</a></button>
         <button id="head-btn1"><a href="#">Integration</a></button>
         <button id="head-btn1"><a href="#">Help</a></button>
@@ -42,14 +46,14 @@
     <hr clear="both" />
     <div class="dis_para">
       <div class="acc_btn">
-        <button id="btn1" onclick="profile()">Profile</button>
+        <button id="btn1" onclick="profile1()">Profile</button>
         <button id="btn2" onclick="Brandling()">Branding</button>
         <button id="btn3" onclick="link()">My Link</button>
         <button id="btn4" onclick="Login()">Login</button>
       </div>
       <!--  -->
       <!--  -->
-      <div class="dis_form">
+      <div class="dis_form" id="Profile" onclick="profile()" >
         <form id="form1">
           <div class="pics">
             <img src="img/profile.png" id="img1" />
@@ -146,11 +150,7 @@
                 Save Changes
               </button>
               <button id="foot-btn" onclick="cancel()">Cancel</button>
-              <button
-                id="foot-btn"
-                style="margin-left: 25vw"
-                onclick="deleteAcc()"
-              >
+              <button id="foot-btn" style="margin-left: 25vw" onclick="deleteAcc()">
                 Delete Account
               </button>
             </div>
@@ -159,6 +159,61 @@
       </div>
       <!--  -->
       <!--  -->
+
+      <!-- Branding -->
+
+      <div class="dis_form" id="Branding" onclick="branding()" hidden>
+        <label>logo<img src="img/question.png" id="mark1" /></label>
+        <div style="border: 1px solid grey; height: 25vh; width: 30vw"></div>
+        <button
+          id="foot-btn"
+          style="
+            color: skyblue;
+            cursor: pointer;
+            margin-top: 10px;
+            border: 1px solid skyblue;
+          "
+          onclick="saved()"
+        >
+          Upload Image
+        </button>
+
+        <label style="margin-left: 4vw">JPG, GIF or PNG. Max size of 5MB.</label
+        ><br /><br /><br />
+        <label style="cursor: pointer"
+          >Calendly Branding<img src="img/question.png" id="mark1"
+        /></label>
+        <br /><br /><br />
+        <button
+          id="foot-btn"
+          style="
+            color: white;
+            border: 1px solid skyblue;
+            background-color: skyblue;
+          "
+          onclick="saved()"
+        >
+          Save Changes
+        </button>
+        <button id="foot-btn" onclick="cancel()">Cancel</button>
+      </div>
+      <!-- branding ends -->
     </div>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+    <script type="text/javascript">
+      window.__be = window.__be || {};
+      window.__be.id = "604afaec012e2e000777fe25";
+      (function () {
+        var be = document.createElement("script");
+        be.type = "text/javascript";
+        be.async = true;
+        be.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "cdn.chatbot.com/widget/plugin.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(be, s);
+      })();
+    </script>
+    <!-- End of ChatBot code -->
   </body>
 </html>

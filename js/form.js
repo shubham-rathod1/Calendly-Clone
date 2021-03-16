@@ -28,3 +28,7 @@ btn2.addEventListener('click',storedata);
 document.getElementById('back_button').addEventListener('click',()=>{
     window.location.href = './user.html'
 })
+
+function redirect(){
+    window.location.href = './form.html'
+}

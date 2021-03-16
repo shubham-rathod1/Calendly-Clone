@@ -4,6 +4,7 @@
 
   color: rgb(54, 54, 54);
   margin: 0%;
+  font-family: 'Montserrat', sans-serif;
 }
 .pages {
   text-align: center;
@@ -28,7 +29,7 @@ img {
 
 input {
   height: 50px;
-  width: 400px;
+  width: 325px;
   border-radius: 5px;
   border: 1px solid grey;
   padding-left: 20px;
@@ -50,15 +51,15 @@ input {
   width: 100px;
   border-radius: 2px;
   color: white;
-  border: 1px solid skyblue;
-  background-color: blue;
+  border: 1px solid #00A3FA;
+  background-color: #00A3FA;
 }
 a {
   text-decoration: none;
 }
 .dropbtn {
   background-color: transparent;
-  color: blue;
+  color: #00A3FA;
   padding: 16px;
   font-size: 16px;
   border: none;

@@ -3,18 +3,23 @@ var searchBtn = document.getElementById('serch_btn');
 var alldata = localStorage.getItem('DATA');
 alldata = JSON.parse(alldata);
 var html = '';
-for (i = alldata.length - 1; i >= 0; i--) {
-    html += `<div class="datadiv">
-    <div class="color_datadiv"></div>`
-    // for (j = 0; j < alldata[i].length; j++) {
-        html += `<h1>${alldata[i][0]}</h1>
-                <h3>${alldata[i][3]},${alldata[i][2]}</h3>
-                <hr/>
-                <p class="blue_text">/${alldata[i][4]}</p>
-                <button class="copy_link">Copy Link</button>`
-        // console.log(alldata[i][j]);
-    // }
-    html += `</div>`
+console.log(alldata == null);
+if(alldata != null)
+{
+    console.log('jjj');
+    for (i = alldata.length - 1; i >= 0; i--) {
+        html += `<div class="datadiv">
+        <div class="color_datadiv"></div>`
+        // for (j = 0; j < alldata[i].length; j++) {
+            html += `<h1>${alldata[i][0]}</h1>
+                    <h3>${alldata[i][3]},${alldata[i][2]}</h3>
+                    <hr/>
+                    <p class="blue_text">/${alldata[i][4]}</p>
+                    <button class="copy_link">Copy Link</button>`
+            // console.log(alldata[i][j]);
+        // }
+        html += `</div>`
+}
 }
 
 document.getElementById('showdata').innerHTML = html;
@@ -54,5 +59,5 @@ function search() {
 
 searchBtn.addEventListener('click', search);
 document.getElementById('create').addEventListener('click',()=>{
-    window.location.href = './form.html'
+    window.location.href = './eventpage.html'
 })

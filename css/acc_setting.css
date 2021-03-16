@@ -14,6 +14,9 @@ hr {
   margin-right: 2vw;
   border: 0.1px thin grey;
 }
+.display1 {
+  display: none;
+}
 .dis_para {
   display: flex;
   flex-direction: row;
