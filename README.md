@@ -18,6 +18,6 @@ Sources:
 
 2. Harshit Dattaram Sanas (sm2_064) - **Solutions Page**, **Login Page**, **SignUp Page**, **User Profile Page**.
 
-3. sm2_091-Mahima Makkar - **Pricing Page**, **User Event Page**.
+3. Mahima Makkar (sm2_091) - **Pricing Page**, **User Event Page**.
 
 4. Shubham Rathod (sm2_169) - **Landing Page**, **User Accounts Page**, **User Profile Page**, **User Event Page**.
