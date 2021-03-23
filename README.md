@@ -1,7 +1,23 @@
-# Alaknanda
+# Calendly.com Clone By Team Alaknanda
+[Masai School](www.masaischool.com) 
+> Batch :Samurai 2
 
-calendly.com Clone
+Sources:
 
-fontAwesome :
-chatbot integration (from app.chatbot)
-manipulated localstorage and JSON to display data dynamically
+- Images: [Calendly](https://calendly.com/)
+
+- Fonts: [Google Fonts](https://fonts.google.com/)  
+
+- Icons:[Font Awesome](https://fontawesome.com/)
+
+- Chatbot Integration: [ChatBot](https://www.chatbot.com/)
+
+### Members and their Responsibility
+
+1. Ajmal KV (sm2_010) - **Integration Page**, **Teams Page**, **User Accounts Page**, **User Profile Page**, **User Event Page**.
+
+2. Harshit Dattaram Sanas (sm2_064) - **Solutions Page**, **Login Page**, **SignUp Page**, **User Profile Page**.
+
+3. sm2_091-Mahima Makkar - **Pricing Page**, **User Event Page**.
+
+4. Shubham Rathod (sm2_169) - **Landing Page**, **User Accounts Page**, **User Profile Page**, **User Event Page**.
