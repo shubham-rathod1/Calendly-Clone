@@ -21,3 +21,6 @@ Sources:
 3. Mahima Makkar (sm2_091) - **Pricing Page**, **User Event Page**.
 
 4. Shubham Rathod (sm2_169) - **Landing Page**, **User Accounts Page**, **User Profile Page**, **User Event Page**, **Chat Bot Integration**.
+
+
+link : <a href="https://calendly-clone-fawn.vercel.app/">https://calendly-clone-fawn.vercel.app/</a>
