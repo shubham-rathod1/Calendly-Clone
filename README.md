@@ -23,4 +23,9 @@ Sources:
 4. Shubham Rathod (sm2_169) - **Landing Page**, **User Accounts Page**, **User Profile Page**, **User Event Page**, **Chat Bot Integration**.
 
 
+### How to Run
+1. Clone the repo using https://github.com/shubham-rathod1/Calendly-Clone.git
+2. Open index.html with any browser
+
+
 link : <a href="https://calendly-clone-fawn.vercel.app/">https://calendly-clone-fawn.vercel.app/</a>
